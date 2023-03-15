@@ -8,14 +8,15 @@
 </head>
 <body>
     <script>
-        var leap = prompt("Enter a year = ");
-        if((leap %4==0) || (leap % 100 != 0) && (leap % 400 ==0))
+        var arr = [];
+        for(var i=1;i<=5;i++)
         {
-        document.write("It is a leap year ",leap);
+        var x =prompt("Enter a number = <br>" );
+        arr.push(x);
         }
-        else{
-            document.write("It is not a leap year ",leap);
-        }
+        console.log(arr);
+        var x = Math.floor(Math.random() * 5) 
+        console.log(`${arr[x]} is going to buy lunch today !`);
         </script>
 </body>
 </html>

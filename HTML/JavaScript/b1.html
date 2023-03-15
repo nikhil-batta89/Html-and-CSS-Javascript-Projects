@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fname = "Nikhil ";
+//document.write(fname);
+        var lname = "Batta";
+    //    document.write(lname);
+
+        var fullname = fname.concat(lname);
+        document.write(fullname );
+        document.write(fullname.length);
+        console.log(fname.toUpperCase());
+        console.log(lname.toLowerCase());
+        console.log(fname.trim());
+        var sen = 'Ram loves eating apples.Ram is happy';
+        console.log(sen);
+        //var newsen = sen.replace('Ram','Nikhil');
+        //var newsen = sen.replace('ram','Nikhil');
+        var newsen = sen.replace(/ram/ig,'Nikhil');
+        //var newsen = sen.replace(/ram/g,'Nikhil');//global variable
+        console.log(newsen);
+        console.log(fullname.slice(0,7));
+        console.log(fullname.substring(0,6));
+        console.log(fullname.charAt(6));
+        console.log(fullname.split(" "));
+</script>
+</body>
+</html>

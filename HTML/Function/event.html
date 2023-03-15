@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form,label,  button{
+            
+            border: 2px solid black;
+            margin-left:20px;
+            margin-top:20px;
+            display: inline-block;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <script src="event.js"></script>
+    <form onsubmit="submitted(e)">
+        <!--<div onmouseover="Hovereffect()">-->
+            <div onmouseleave="Hovereffect()">
+        <label >Name</label>
+        <input type="text" placeholder="name" onchange="nameInput()">
+    </div>
+        <br>
+        </div>
+    <!--  <div onmouseenter="alert('You are enter age field')">-->
+        <div onmouseleave="alert('You left age field')">
+        <label >Age</label>
+        <!-- onkeypress = triggers when key is pressed  ,
+            onclickup = triggers on Releasing key   ,  onkeydown = triggers when key is pressed down 
+            <input type="text" placeholder="Age" onfocus="focussing()"><br>-->
+        <input type="text" placeholder="Age" onblur="blurring()">
+    </div>
+    <br>
+        
+        <label for="Experience">Experience</label>
+        <input type="text" placeholder="Experience" onkeydown="downkeyPressed(event)"><br>
+        <label for="Review about">Review about Class</label>
+        <textarea type="text" placeholder="Review about Class"></textarea><br>
+        <button type="submit" >Submit</button>
+        <!--<button type="submit" onclick="triggerButton()">Submit</button>
+        <button  ondblclick="triggerButton()">Submit</button>-->
+        
+    </form>
+</body>
+</html>

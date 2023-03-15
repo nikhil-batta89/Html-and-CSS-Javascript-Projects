@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // Adding elements at the end of an array
+    // Declaring and initializing arrays
+    var number_arr = [ 10, 20, 30, 40, 50 ];
+    var string_arr = [ "piyush", "gourav", "smruti", "ritu" ];
+    
+    // push()
+    // number_arr contains [10, 20, 30, 40, 50, 60]
+    number_arr.push(60);
+    
+    // We can pass multiple parameters to the push()
+    // number_arr contains
+    // [10, 20, 30, 40, 50, 60, 70, 80, 90]
+    number_arr.push(70, 80, 90);
+
+    // string_arr contains
+    // ["piyush", "gourav", "smruti", "ritu", "sumit", "amit"];
+    string_arr.push("sumit", "amit");
+     
+    // Printing both the array after performing push operation
+    console.log("After push op " + number_arr);
+    console.log("After push op " + string_arr);
+/*
+    var fruits=['apple','mango','grapes'];
+    fruits.push('orange');
+    console.log(fruits);
+
+    fruits.pop();
+    console.log(fruits);
+    fruits.unshift('lemon');
+    console.log(fruits);
+    fruits.shift();
+    console.log(fruits);
+    
+    for(let i=0;i<fruits.length;i++)
+    {
+        console.log(fruits[i]);
+    }
+  */ 
+</script>
+</body>
+</html>
