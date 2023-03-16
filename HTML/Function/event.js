@@ -21,8 +21,8 @@ function Hovereffect()
     console.log("Name label Hover");
 
 }
-function submitted(e)
+function submitted(event)
 {
-    e.preventDefault();
+    event.preventDefault();
     console.log("form submitted succesfully");
 }

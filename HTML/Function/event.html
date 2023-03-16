@@ -12,14 +12,14 @@
             margin-left:20px;
             margin-top:20px;
             display: inline-block;
-            align-items: center;
+            text-align:justify ;
             margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
     <script src="event.js"></script>
-    <form onsubmit="submitted(e)">
+    <form onsubmit="submitted(event)">
         <!--<div onmouseover="Hovereffect()">-->
             <div onmouseleave="Hovereffect()">
         <label >Name</label>
@@ -42,9 +42,14 @@
         <label for="Review about">Review about Class</label>
         <textarea type="text" placeholder="Review about Class"></textarea><br>
         <button type="submit" >Submit</button>
+        <button type="submit">New Submit</button>
         <!--<button type="submit" onclick="triggerButton()">Submit</button>
-        <button  ondblclick="triggerButton()">Submit</button>-->
+        <button  ondblclick="triggerButton()">Submit</button>
         
+        1.getElementById('id')
+        2.getElementByClassName('class')
+        3.getElementByTagName('tag')//div,p,h
+        -->
     </form>
 </body>
 </html>
