@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149018550.jpg');
+    background-position:center;
+    text-align: center;
+}
+h1{
+    font-variant: small-caps;
+    font-size: 40px;
+    color: aquamarine;
+    background-color: rgb(44, 46, 185);
+    display: inline-block;
+    padding:15px;
+}
+h4{
+    font-size: 30px;
+    color: rgb(21, 10, 14);
+    text-decoration: underline;
+
+}
+button{
+    margin: 10px auto;
+    border: 3px solid;
+    font-size: larger;
+}

@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Basement</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Kameron&family=M+PLUS+Rounded+1c:wght@100;400&display=swap');
+    *
+    {
+        font-family: 'inter',sans-serif;
+        font-family: 'Rajdhani',sans-serif;
+    }
+    </style>
 </head>
-<body>
-    <h1>The Basement</h1>
-    <p>I knew I shouldn't go there , in that dank,cold little place.But I wanted to find  my friend , and he was hiding in the basement</p>
-    <button type="Get in The Mood">Get In The Mood</button><br>
-    <form>
-        <label type="Name">Type your name here,if you dare:</label>
-        <input type="text" placeholder="write a any type"><br><br>
-        <button type="click">Please,Please Don't Click Me</button>
-        <button type="Get in The Mood">Tell Me What Happened</button>
-    </form>
+<body id="moodlighting">
+    <h1><em>The Basement</em></h1>
+    <p id="message">I knew I shouldn't go there , in that dank,cold little place.But I wanted to find  my friend , and he was hiding in the basement</p>
+    <audio id="audioMusic"><source src="sound.mp3"></audio>
+    <button onclick="mLighting()">Get In The Mood</button><br>
+    
+        <label id="lb1">Type your name here,if you dare:</label>
+        <input type="text" onblur="snd()" id="feild"><br><br>
+        <button onclick="change()">Please,Please Don't Click Me</button>
+        <button onclick="show()">Tell Me What Happened</button>
+    
+    <script src="basic2.js"></script>
+
 </body>
 </html>
