@@ -113,4 +113,4 @@ function Task1()
     },1000)
 }
 Task1();
-//
+//call stack function call hota jayaga
